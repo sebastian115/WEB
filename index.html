@@ -2,21 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IF=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML SEMANTICO</title>
+    <title>Formulario</title>
 </head>
-
 <body>
-    <h1>SERIES FAVORITAS</h1>
-    <ol>
-        <li>La casa de Papel</li>
-        <li>Wanda Vision</li>
-        <li>Black Mirror</li>
-        <li>Mr Robot</li>
-        <li>Game of thrones</li>
-        <li>Soy otra serie </li>
-        <li>El orfanato</li>
-    </ol>
+    <main>
+        <form action="">
+            <label for="name">
+                <span>¿Cual es tu nombre?</span>
+                <input type="text" name="name" id="name" autocomplete="name" required>
+            </label>
+            <label for="last_name">
+                <span>¿Cual es tu Apellido?</span>
+                <input type="text" name="last_name" id="last_name" autocomplete="name" required>
+            </label>
+            <label for="telefono">
+                <span>¿Cual es tu telefono?</span>
+                <input type="number" name="telefono" id="telefono" autocomplete="tel" required>
+            </label>
+            <label for="fecha_nacimiento">
+                <span>¿Cual es tu fecha de nacimiento?</span>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" autocomplete="bday-day" required>
+            </label>
+            <label for="email">
+                <span>¿Cual es tu email?</span>
+                <input type="email" name="email" id="email" autocomplete="email" required>
+            </label>
+            <label for="password">
+                <span>¿Escriba su contraseña?</span>
+                <input type="password" name="password" id="password" autocomplete="new-password" required>
+            </label>
+            <label for="password_autentication">
+                <span>¿Confirme la contraseña?</span>
+                <input type="password" name="password_autentication" id="password_autentication" required>
+            </label>
+            <input type="submit">
+        </form>
+    </main>
 </body>
 </html>
